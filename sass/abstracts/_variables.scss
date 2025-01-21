@@ -4,23 +4,28 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$text-main-font: "Open Sans", sans-serif !default;
+$text-secondary-font: "Raleway", sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace !default;
+//$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace !default;
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: #303030 !default;
+$text-color-active: #ff6c00;
+
+/// Background
+/// @type Color
+$bg-light-color: #f7f7f7 !default;
+$bg-dark-color: #111319 !default;
+
+// -----------------------------------
 
 /// Main brand color
 /// @type Color
 $brand-color: rgb(229, 0, 80) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
 
 /// Medium grey
 /// @type Color

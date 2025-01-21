@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 // 1. Vendors
-//@use 'vendors/normalize';
+@use "vendors/normalize";
 
 // 2. Base stuff
 @use "base/base";
