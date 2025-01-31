@@ -1,0 +1,27 @@
+.hero {
+	background-color: $bg-dark-color;
+}
+
+.hero-main {
+	font-family: $text-secondary-font;
+	font-style: normal;
+	font-size: 72px;
+	line-height: calc(85 / 72);
+	letter-spacing: 0.05em;
+	color: #ffffff;
+}
+
+.hero-link {
+	font-size: 11px;
+	font-weight: 600;
+	line-height: calc(15 / 11);
+	letter-spacing: 0.2em;
+}
+.hero-link:hover,
+.hero-link:focus {
+	color: $text-color-active;
+}
+
+.hero-link-active {
+	color: $text-color-active;
+}

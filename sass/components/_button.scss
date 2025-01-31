@@ -1,0 +1,28 @@
+.btn {
+	padding: 12px 19px 12px 19px;
+	border-radius: 25px;
+	border: solid 1px $text-color-active;
+
+	font-family: inherit;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: calc(16 / 12);
+	letter-spacing: 0.09em;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: $bg-color-active;
+}
+
+.btn-mode-light {
+	background-color: $text-color;
+}
+
+.btn-mode-dark {
+	background-color: #fff;
+}

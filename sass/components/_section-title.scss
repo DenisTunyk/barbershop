@@ -1,0 +1,15 @@
+.section-title {
+	font-family: $text-secondary-font;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: calc(49 / 42);
+	letter-spacing: 0.05em;
+}
+
+.section-title-mode-light {
+	background-color: $text-color;
+}
+
+.section-title-mode-dark {
+	color: #fff;
+}

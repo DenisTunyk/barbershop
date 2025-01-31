@@ -1,0 +1,23 @@
+.header {
+	background-color: gray;
+}
+
+.header-link,
+.header-phone {
+	font-size: 12px;
+	font-weight: 600;
+	line-height: calc(16 / 12);
+	letter-spacing: 0.1em;
+	color: #fff;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-phone:hover,
+.header-phone:focus {
+	color: $text-color-active;
+}
+
+.header-link-current {
+	color: $text-color-active;
+}
