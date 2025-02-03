@@ -14,12 +14,18 @@
 @import "layout/hero";
 @import "layout/footer";
 @import "layout/header";
+@import "layout/section-prices";
+@import "layout/section-advantages";
+@import "layout/section-works";
+@import "layout/section-contacts";
 
 // 4. Components
 @import "components/button";
 @import "components/logo";
 @import "components/section-title";
 @import "components/uppertitle";
+@import "components/subtitle";
+@import "components/description";
 
 // 5. Pages
 @import "pages/home";

@@ -1,0 +1,22 @@
+.footer-copyright {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: calc(15 / 11);
+	letter-spacing: 0.2em;
+	color: $price-color-text;
+}
+
+.footer-link {
+	font-weight: 600;
+	font-size: 11px;
+
+	/* line-height: 15px; */
+	line-height: calc(15 / 11);
+	letter-spacing: 0.2em;
+	color: $price-color-text;
+
+	&:hover,
+	&:active {
+		color: $text-color-active;
+	}
+}

@@ -1,0 +1,21 @@
+.advantages-item span {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: calc(57 / 42);
+	letter-spacing: 0.05em;
+	color: $text-color;
+}
+
+.advantages-item sup {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: calc(22 / 16);
+	color: $text-color-active;
+}
+
+.advantages-item p {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: calc(15 / 11);
+	color: $text-color;
+}

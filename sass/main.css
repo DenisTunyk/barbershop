@@ -317,6 +317,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-weight: 400;
+}
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -358,6 +362,20 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -395,6 +413,26 @@ body {
   color: #ff6c00;
 }
 
+.footer-copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  /* line-height: 15px; */
+  line-height: 1.3636363636;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+.footer-link:hover, .footer-link:active {
+  color: #ff6c00;
+}
+
 .header {
   background-color: gray;
 }
@@ -417,6 +455,86 @@ body {
 
 .header-link-current {
   color: #ff6c00;
+}
+
+.price {
+  background-color: #303030;
+}
+
+.price-item-text {
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.advantages-item span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.advantages-item sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #ff6c00;
+}
+
+.advantages-item p {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  color: #303030;
+}
+
+.card-name {
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.card-info {
+  font-size: 14px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.contacts {
+  background-color: #303030;
+}
+
+.contacts-adress {
+  font-style: normal;
+}
+
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.contacts-link:hover, .contacts-link:active {
+  color: #ff6c00;
+}
+
+.contacts-list li:first-child .contacts-link {
+  font-weight: 700;
+}
+
+.contacts-list li:last-child .contacts-link {
+  text-decoration: underline;
+}
+
+.contacts-time {
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 
 .btn {
@@ -456,7 +574,7 @@ body {
 }
 
 .section-title-mode-light {
-  background-color: #303030;
+  color: #303030;
 }
 
 .section-title-mode-dark {
@@ -471,9 +589,26 @@ body {
 }
 
 .uppertitle-mode-light {
-  background-color: #303030;
+  color: #303030;
 }
 
 .uppertitle-mode-dark {
   color: rgba(157, 164, 189, 0.6);
+}
+
+.subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #555;
+}
+
+.description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.8571428571;
+  letter-spacing: 0.02em;
+  color: #555;
 }/*# sourceMappingURL=main.css.map */
