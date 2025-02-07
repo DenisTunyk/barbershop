@@ -1,4 +1,18 @@
+.works {
+	background: #f7f7f7;
+}
+.works-list {
+	display: flex;
+	gap: 30px;
+}
+
+.card-block-info {
+	padding: 30px 5px;
+	text-align: center;
+}
+
 .card-name {
+	margin-bottom: 3px;
 	font-size: 18px;
 	line-height: calc(30 / 18);
 	letter-spacing: 0.02em;
@@ -10,4 +24,30 @@
 	line-height: calc(19 / 14);
 	letter-spacing: 0.02em;
 	color: $text-color-active;
+}
+
+.card-list {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+
+	background-color: #fff;
+}
+
+.card-icon {
+	fill: $bg-dark-color;
+	&:hover,
+	&:focus {
+		fill: $bg-color-active;
+	}
 }

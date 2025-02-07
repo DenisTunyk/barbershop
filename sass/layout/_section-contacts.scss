@@ -1,5 +1,24 @@
 .contacts {
+	max-width: 1600px;
 	background-color: $bg-dark-color;
+	background-image: url("../../images/contacts/bg-img.png");
+	background-repeat: no-repeat;
+	background-position: top 0 left calc(50% + 393px);
+	//background-size: cover;
+}
+
+.contacts-container {
+	display: flex;
+}
+
+.contacts-form {
+	flex-basis: 50%;
+	padding-right: 30px;
+}
+
+.contacts-group {
+	flex-basis: 50%;
+	padding: 0px 100px;
 }
 
 .contacts-adress {

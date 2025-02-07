@@ -1,6 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
+:root {
+	--items: 3;
+	--indent: 30px;
+}
 
 /// Regular font family
 /// @type List
@@ -26,6 +30,8 @@ $bg-dark-color: #303030 !default;
 $bg-color-active: #ff6c00;
 
 // -----------------------------------
+$items: 3;
+$indent: 30px;
 
 /// Text size
 //$text-main-size:

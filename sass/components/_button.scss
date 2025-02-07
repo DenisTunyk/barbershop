@@ -1,5 +1,9 @@
 .btn {
-	padding: 12px 19px 12px 19px;
+	max-width: 200px;
+	min-width: 160px;
+	min-height: 40px;
+
+	padding: 11px 19px 11px 19px;
 	border-radius: 25px;
 	border: solid 1px $text-color-active;
 
@@ -20,9 +24,14 @@
 }
 
 .btn-mode-light {
-	background-color: $text-color;
+	color: $text-color;
 }
 
 .btn-mode-dark {
-	background-color: #fff;
+	color: #fff;
+}
+
+.btn-center {
+	display: block;
+	margin: 0 auto;
 }

@@ -1,3 +1,8 @@
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+}
+
 .footer-copyright {
 	font-weight: 600;
 	font-size: 11px;
@@ -5,7 +10,10 @@
 	letter-spacing: 0.2em;
 	color: $price-color-text;
 }
-
+.footer-list {
+	display: flex;
+	gap: 40px;
+}
 .footer-link {
 	font-weight: 600;
 	font-size: 11px;

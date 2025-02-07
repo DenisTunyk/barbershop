@@ -2,13 +2,37 @@
 	background-color: gray;
 }
 
+.header-container {
+	display: flex;
+	align-items: center;
+}
+
+.header-logo {
+	margin-right: 71px;
+}
+
+.header-nav {
+	margin-right: auto;
+}
+
+.header-phone {
+	margin-right: 40px;
+}
+
 .header-link,
 .header-phone {
+	padding-top: 52px;
+	padding-bottom: 52px;
 	font-size: 12px;
 	font-weight: 600;
 	line-height: calc(16 / 12);
 	letter-spacing: 0.1em;
 	color: #fff;
+}
+
+.header-list {
+	display: flex;
+	gap: 40px;
 }
 
 .header-link:hover,
