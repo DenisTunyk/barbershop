@@ -42,12 +42,13 @@
 	border-radius: 50%;
 
 	background-color: #fff;
+
+	&:hover .card-icon,
+	&:focus .card-icon {
+		fill: $bg-color-active;
+	}
 }
 
 .card-icon {
 	fill: $bg-dark-color;
-	&:hover,
-	&:focus {
-		fill: $bg-color-active;
-	}
 }

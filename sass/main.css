@@ -568,7 +568,7 @@ body {
   background-position: center;
   background-image: url(../../images/price/bg-img_desk@1x.png);
   background-repeat: no-repeat;
-  background-color: #303030;
+  background-color: #111319;
   background-size: cover;
 }
 
@@ -710,17 +710,18 @@ body {
   border-radius: 50%;
   background-color: #fff;
 }
+.card-link:hover .card-icon, .card-link:focus .card-icon {
+  fill: #ff6c00;
+}
 
 .card-icon {
-  fill: #303030;
-}
-.card-icon:hover, .card-icon:focus {
-  fill: #ff6c00;
+  fill: #111319;
 }
 
 .contacts {
   max-width: 1600px;
-  background-color: #303030;
+  margin: 0 auto;
+  background-color: #111319;
   background-image: url("../../images/contacts/bg-img.png");
   background-repeat: no-repeat;
   background-position: top 0 left calc(50% + 393px);
@@ -741,10 +742,12 @@ body {
 }
 
 .contacts-adress {
+  margin-bottom: 72px;
   font-style: normal;
 }
 
 .contacts-link {
+  display: flex;
   font-size: 18px;
   line-height: 1.6666666667;
   letter-spacing: 0.02em;
@@ -752,6 +755,14 @@ body {
 }
 .contacts-link:hover, .contacts-link:active {
   color: #ff6c00;
+}
+
+.contacts-link::before {
+  content: "";
+  background: url("./../../images/contacts/map-pin.png");
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
 
 .contacts-list li:first-child .contacts-link {
@@ -767,6 +778,17 @@ body {
   line-height: 1.6666666667;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.contact-icon {
+  fill: #9da4bd;
 }
 
 .about-container {

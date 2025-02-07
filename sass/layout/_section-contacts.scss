@@ -1,5 +1,6 @@
 .contacts {
 	max-width: 1600px;
+	margin: 0 auto;
 	background-color: $bg-dark-color;
 	background-image: url("../../images/contacts/bg-img.png");
 	background-repeat: no-repeat;
@@ -22,10 +23,12 @@
 }
 
 .contacts-adress {
+	margin-bottom: 72px;
 	font-style: normal;
 }
 
 .contacts-link {
+	display: flex;
 	font-size: 18px;
 	line-height: calc(30 / 18);
 	letter-spacing: 0.02em;
@@ -34,6 +37,14 @@
 	&:active {
 		color: $text-color-active;
 	}
+}
+
+.contacts-link::before {
+	content: "";
+	background: url("./../../images/contacts/map-pin.png");
+	width: 20px;
+	height: 20px;
+	display: inline-block;
 }
 
 .contacts-list li:first-child .contacts-link {
@@ -49,4 +60,15 @@
 	line-height: calc(30 / 18);
 	letter-spacing: 0.02em;
 	color: $price-color-text;
+}
+
+.contacts-item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 16px;
+}
+
+.contact-icon {
+	fill: #9da4bd;
 }
