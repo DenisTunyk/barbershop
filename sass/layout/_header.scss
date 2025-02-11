@@ -1,5 +1,14 @@
 .header {
-	background-color: gray;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	z-index: 100;
+	&.no-transparency {
+		background-color: rgba(25, 28, 38, 0.5);
+		backdrop-filter: blur(4px);
+	}
 }
 
 .header-container {

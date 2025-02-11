@@ -13,8 +13,8 @@
     <title>BarberShop</title>
 </head>
 
-<body>
-    <header class="header">
+<body data-page>
+    <header class="header" data-header>
         <div class="container header-container">
             <a href="#" class="logo link header-logo">
                 <img class="logo-img" src="./images/header/logo.png" width="76" height="76" alt="Logo BarberShop" />
@@ -28,35 +28,42 @@
                 </ul>
             </nav>
             <a class="header-phone" href="tel:++380441111111">+38 044 111 11 11</a>
-            <button class="header-btn btn btn-mode-dark" type="button">Online-booking</button>
+            <button class="header-btn btn btn-mode-dark" data-modal-open type="button">Online-booking</button>
         </div>
     </header>
     <main class="main">
         <section class="hero">
-            <div class="container">
-                <ul class="hero-list">
-                    <li class="hero-item">
-                        <a class="hero-link hero-link-active" target="_blank" rel="noreferrer noopener"
-                            href="https://instagram.com">Instagram</a>
-                    </li>
-                    <li class="hero-item">
-                        <a class="hero-link" target="_blank" rel="noreferrer noopener"
-                            href="https://youtobe.com">Youtube</a>
-                    </li>
-                </ul>
-                <p class="hero-uppertitle uppertitle uppertitle-mode-dark">A hair salon for men in Kyiv</p>
-                <h1 class="hero-main">BarberShop</h1>
-                <p class="hero-desc">We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
-                </p>
-                <div class="pagination">
-                    <div class="pagination-item"></div>
-                    <div class="pagination-item"></div>
-                    <div class="pagination-item"></div>
+            <div class="container hero-container">
+                <div class="hero-side-left">
+                    <ul class="hero-list">
+                        <li class="hero-item">
+                            <a class="hero-link hero-link-active" target="_blank" rel="noreferrer noopener"
+                                href="https://instagram.com">Instagram</a>
+                        </li>
+                        <li class="hero-item">
+                            <a class="hero-link" target="_blank" rel="noreferrer noopener"
+                                href="https://youtobe.com">Youtube</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="slider-controls">
-                    <li class="slider-item"><button class="slider-btn" type="button">Back</button></li>
-                    <li class="slider-item"><button class="slider-btn" type="button">Forward</button></li>
-                </ul>
+                <div class="hero-side-right">
+                    <p class="hero-uppertitle uppertitle uppertitle-mode-dark">A hair salon for men in Kyiv</p>
+                    <h1 class="hero-main">BarberShop</h1>
+                    <p class="hero-desc">We are experts in trendy men’s haircuts. We work quickly, carefully and
+                        with
+                        style.
+                    </p>
+                    <div class="pagination">
+                        <div class="pagination-item active"></div>
+                        <div class="pagination-item"></div>
+                        <div class="pagination-item"></div>
+                    </div>
+                    <ul class="slider-controls">
+                        <li class="slider-item"><button class="slider-btn disabled" type="button">Back</button></li>
+                        <li class="slider-item"><button class="slider-btn" type="button">Forward</button></li>
+                    </ul>
+                </div>
+
             </div>
         </section>
         <section class="about section" id="about">
@@ -342,20 +349,26 @@
                     <address class="contacts-adress">
                         <ul class="contacts-list">
                             <li class="contacts-item">
-                                <!-- <svg class="contact-icon" width="24" height="24">
-                                    <use href="./images/spryte.svg#icon-phone"></use>
-                                </svg> -->
+                                <svg class="contact-icon" width="24" height="24">
+                                    <use href="./images/spryte.svg#icon-map-pin"></use>
+                                </svg>
                                 <a class="contacts-link link" href="https://maps.app.goo.gl/YMqSyoYbTNQ9RJ3y9"
                                     target="_blank" rel="noopener noreferrer">
                                     st. Vasylkivska, 7A <br /> Kiev, 08132
                                 </a>
                             </li>
                             <li class="contacts-item link">
+                                <svg class="contact-icon" width="24" height="24">
+                                    <use href="./images/spryte.svg#icon-phone"></use>
+                                </svg>
                                 <a class="contacts-link" href="tel:+380441111111">+38 044 111
                                     11
                                     11</a>
                             </li>
                             <li class="contacts-item">
+                                <svg class="contact-icon" width="24" height="24">
+                                    <use href="./images/spryte.svg#icon-mail"></use>
+                                </svg>
                                 <a class="contacts-link link"
                                     href="mailto:barbershop@email.com">mailto:barbershop@email.com</a>
                             </li>
@@ -388,5 +401,16 @@
         </div>
     </footer>
 </body>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal-btn" data-modal-close>
+            <svg class="card-icon" width="24" height="32">
+                <use href="./images/spryte.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/header-scroll.js"></script>
+<script src="./js/modal.js"></script>
 
 </html>

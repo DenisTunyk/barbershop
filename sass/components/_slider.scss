@@ -1,0 +1,57 @@
+.slider-controls {
+	position: absolute;
+	display: flex;
+	gap: 24px;
+
+	right: 20px;
+	bottom: 40px;
+}
+.slider-btn {
+	width: 60px;
+	padding: 0;
+	padding-bottom: 8px;
+
+	font-family: $text-main-font;
+	font-weight: 600;
+	font-size: 11px;
+
+	line-height: calc(15 / 11);
+	letter-spacing: 0.1em;
+
+	color: $btn-txt-color;
+	text-align: right;
+
+	background: transparent;
+	border: none;
+
+	border-bottom: 1px solid $btn-txt-color;
+
+	cursor: pointer;
+
+	&.disabled {
+		text-align: left;
+		color: rgba(157, 164, 189, 0.6);
+		border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+	}
+}
+
+.pagination {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+}
+
+.pagination-item {
+	margin-left: auto;
+	width: 8px;
+	height: 2px;
+	margin-bottom: 12px;
+	background-color: $price-color-text;
+	&:last-child {
+		margin-bottom: 0px;
+	}
+	&.active {
+		width: 18px;
+		background-color: $btn-txt-color;
+	}
+}

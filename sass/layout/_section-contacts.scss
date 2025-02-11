@@ -39,13 +39,14 @@
 	}
 }
 
-.contacts-link::before {
-	content: "";
-	background: url("./../../images/contacts/map-pin.png");
-	width: 20px;
-	height: 20px;
-	display: inline-block;
-}
+// .contacts-link::before {
+// 	content: "";
+// 	background: url("./../../images/contacts/map-pin.png");
+// 	width: 20px;
+// 	background-repeat: no-repeat;
+// 	margin-right: 10px;
+// 	display: inline-block;
+// }
 
 .contacts-list li:first-child .contacts-link {
 	font-weight: 700;
